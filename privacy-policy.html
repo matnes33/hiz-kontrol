@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIZ KONTROL — Gizlilik Politikası</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.7;
+  }
+  .header {
+    background: #080c10;
+    color: #00e5cc;
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+  }
+  .header p {
+    color: #aaa;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+  h2 {
+    font-size: 1.1rem;
+    color: #080c10;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #00e5cc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  p { margin-bottom: 10px; font-size: 0.95rem; }
+  ul { padding-left: 20px; margin-bottom: 10px; }
+  ul li { margin-bottom: 6px; font-size: 0.95rem; }
+  .highlight {
+    background: #f0fffe;
+    border-left: 3px solid #00e5cc;
+    padding: 12px 16px;
+    border-radius: 0 6px 6px 0;
+    margin: 12px 0;
+    font-size: 0.9rem;
+  }
+  .date {
+    text-align: center;
+    color: #999;
+    font-size: 0.82rem;
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+  .badge {
+    display: inline-block;
+    background: #e8fffe;
+    color: #00a896;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>HIZ KONTROL</h1>
+  <p>GİZLİLİK POLİTİKASI · PRIVACY POLICY</p>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>📋 Genel Bilgi</h2>
+    <p>
+      <strong>HIZ KONTROL</strong> uygulaması, Türkiye karayollarında sürücülere hız limiti bilgilendirmesi
+      ve uyarı hizmeti sunmak amacıyla geliştirilmiştir.
+    </p>
+    <div class="highlight">
+      Bu uygulama <strong>tamamen bilgilendirme amaçlıdır</strong>. Trafik kurallarına uyumu
+      teşvik etmek için tasarlanmıştır.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📍 Konum Verisi (GPS)</h2>
+    <p>Uygulama, aşağıdaki amaçlarla cihazınızın konum bilgisine erişim talep eder:</p>
+    <ul>
+      <li>Anlık sürüş hızınızı hesaplamak</li>
+      <li>OpenStreetMap üzerinden bulunduğunuz yolun hız limitini sorgulamak</li>
+      <li>Hız limitine göre uyarı üretmek</li>
+    </ul>
+    <div class="highlight">
+      ✅ Konum verileriniz <strong>yalnızca cihazınızda işlenir</strong>.<br>
+      ✅ Hiçbir sunucuya <strong>kişisel konum kaydı gönderilmez</strong>.<br>
+      ✅ Konum geçmişiniz <strong>saklanmaz veya paylaşılmaz</strong>.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🗺️ OpenStreetMap API</h2>
+    <p>
+      Uygulama, yol hız limiti bilgilerini almak için <strong>OpenStreetMap Overpass API</strong>'yi kullanır.
+      Bu sorgular sırasında yalnızca yaklaşık konum koordinatları (enlem/boylam) iletilir.
+    </p>
+    <p>
+      OpenStreetMap gizlilik politikası için:
+      <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">
+        osmfoundation.org/Privacy_Policy
+      </a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>💾 Veri Toplama ve Saklama</h2>
+    <ul>
+      <li><span class="badge">TOPLANMIYOR</span> &nbsp;Kişisel kimlik bilgisi</li>
+      <li><span class="badge">TOPLANMIYOR</span> &nbsp;Sürüş geçmişi veya rota kaydı</li>
+      <li><span class="badge">TOPLANMIYOR</span> &nbsp;Cihaz tanımlayıcıları</li>
+      <li><span class="badge">TOPLANMIYOR</span> &nbsp;Üçüncü taraf reklam verisi</li>
+      <li><span class="badge">TOPLANMIYOR</span> &nbsp;Hesap veya kullanıcı bilgisi</li>
+    </ul>
+    <p style="margin-top:8px">
+      Uygulama içinde gösterilen istatistikler (max hız, aşım sayısı vb.)
+      <strong>yalnızca oturum süresince bellekte tutulur</strong>, uygulama kapatıldığında silinir.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🔒 İzinler</h2>
+    <ul>
+      <li><strong>ACCESS_FINE_LOCATION</strong> — GPS hız ve konum tespiti için</li>
+      <li><strong>ACCESS_COARSE_LOCATION</strong> — Yaklaşık konum (yedek) için</li>
+      <li><strong>INTERNET</strong> — OpenStreetMap API sorguları için</li>
+      <li><strong>VIBRATE</strong> — Hız uyarısı titreşimi için</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>👶 Çocukların Gizliliği</h2>
+    <p>
+      HIZ KONTROL uygulaması 13 yaşın altındaki çocuklara yönelik değildir.
+      13 yaş altı kullanıcılardan bilerek kişisel veri toplanmaz.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>📝 Sorumluluk Reddi</h2>
+    <p>
+      Bu uygulama yalnızca <strong>bilgilendirme amaçlıdır</strong>.
+      Gösterilen hız limitleri OpenStreetMap verilerine dayanır ve her zaman
+      güncel veya doğru olmayabilir.
+    </p>
+    <p>
+      Sürücüler her zaman yol üzerindeki trafik levhalarına ve yasal düzenlemelere
+      uymakla yükümlüdür. Uygulama geliştiricisi, hatalı veri nedeniyle oluşabilecek
+      ceza veya kaza durumlarından sorumlu tutulamaz.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>✉️ İletişim</h2>
+    <p>
+      Gizlilik politikası hakkında sorularınız için e-posta ile iletişime geçebilirsiniz.
+    </p>
+    <p>
+      <strong>E-posta:</strong> <a href="mailto:destek@hiz-kontrol.com">destek@hiz-kontrol.com</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🔄 Politika Güncellemeleri</h2>
+    <p>
+      Bu gizlilik politikası gerektiğinde güncellenebilir. Değişiklikler bu sayfada
+      yayınlanacaktır. Son güncelleme tarihi aşağıda belirtilmiştir.
+    </p>
+  </div>
+
+  <div class="date">
+    Son güncelleme: Mart 2026 · HIZ KONTROL v4.0<br>
+    Türkiye Karayolları Hız Takip Uygulaması
+  </div>
+
+</div>
+</body>
+</html>
